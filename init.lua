@@ -17,3 +17,10 @@ end
 
 require "lazy_setup"
 require "polish"
+
+-- すべてのプラグインと設定のロード後に設定する
+vim.api.nvim_set_option('clipboard', 'unnamedplus')
+
+-- キーマップの設定ファイルを読み込む
+require('keymaps')
+
